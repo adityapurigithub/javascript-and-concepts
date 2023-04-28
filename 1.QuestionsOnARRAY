@@ -1,0 +1,53 @@
+//QuestionsOnARRAY
+
+
+// q1...................................
+var a=[1,2,3,,5];
+
+console.log(a[3]);  //-> undefined..
+
+// why undefined -> because declaring variable without initializing it..
+// while accessing it the output is also undefined
+
+
+// q2...................................
+
+var b=[2,3,4];
+
+b.push(5);
+console.log(b);
+
+console.log(b.shift()); //shift to left ...return the first element
+console.log(b);
+
+
+console.log(b.unshift(2));//it shift to right ...return the last element..also add the element at first position.
+// so we can use unshift(elem) ..to add the element at first position.
+console.log(b);
+
+// push add elem at end..
+// pop remove elem from end..
+
+// shift remove elem from start..
+// unshift add elem to start..
+
+ 
+
+// Q3..........................................
+
+// slice(start,end) returns a piece of the array but it doesn’t affect the original array. 
+
+//splice(start,count,elemToAdd) changes the original array by removing,replacing, or adding values and
+//returns the affected values.
+
+var c=[10,20,30,40,50,60,70];
+console.log(c.slice(2,5));
+console.log(c);
+
+
+console.log(c.splice(2,3,"new elem"));
+console.log(c);
+
+console.log(c.splice(0)); //to remove all elem from array..
+console.log(c)
+
